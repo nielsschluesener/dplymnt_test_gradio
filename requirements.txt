@@ -1,0 +1,4 @@
+numpy==1.19.2
+sklearn
+setuptools==41.0.0
+gradio
