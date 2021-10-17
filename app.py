@@ -13,7 +13,7 @@ def make_prediction(sepal_length, sepal_width, petal_length, petal_width):
         flower ="Versicolour"
     elif pred == 2:
         flower = "Virginica"
-    answer = "The model predicts: Iris " + flower
+    answer = "The model predicts: It's an Iris " + flower
     return answer
 
 iface = gr.Interface(
