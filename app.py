@@ -8,12 +8,13 @@ def make_prediction(sepal_length, sepal_width, petal_length, petal_width):
     pred_array = np.array([[sepal_length,sepal_width,petal_length,petal_width]])
     pred = model.predict(pred_array)
     if pred == 0:
-        flower = "Iris Setosa"
+        flower = "Setosa"
     elif pred == 1:
-        flower ="Iris Versicolour"
+        flower ="Versicolour"
     elif pred == 2:
-        flower = "Iris Virginica"
-    return flower
+        flower = "Virginica"
+    answer = "The model predicts: Iris " + flower
+    return answer
 
 iface = gr.Interface(
     fn=make_prediction, 
